@@ -21,18 +21,18 @@ public class Restaurant {
         int val1 = getCurrentTime().compareTo(openingTime);
         int val2 = getCurrentTime().compareTo(closingTime);
 
-        if (val1 >= 0  && val2 <= 0){
-            return true;}
-        else {
-            return false;}
-        //DELETE ABOVE STATEMENT AND WRITE CODE HERE
+        if (val1 >= 0  && val2 <= 0)
+            return true;
+        else
+            return false;
+        //ADDED ABOVE CODE AS ADVISED.
     }
 
     public LocalTime getCurrentTime(){ return  LocalTime.now(); }
 
     public List<Item> getMenu() {
         return menu;
-        //DELETE ABOVE RETURN STATEMENT AND WRITE CODE HERE
+        //ADDED ABOVE CODE AS ADVISED.
     }
 
     private Item findItemByName(String itemName){

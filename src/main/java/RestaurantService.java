@@ -11,7 +11,7 @@ public class RestaurantService {
                 return restaurant;
         }
         throw new restaurantNotFoundException(restaurantName);
-        //DELETE ABOVE STATEMENT AND WRITE CODE HERE
+        //ADDED ABOVE CODE AS ADVISED.
     }
 
 
