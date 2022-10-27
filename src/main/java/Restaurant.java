@@ -56,6 +56,19 @@ public class Restaurant {
 
         menu.remove(itemToBeRemoved);
     }
+
+    public int selectMenuItems(List<String> selectedItems){
+
+        int totalOrderValue = 0;
+
+        for(String selectedItem: selectedItems) {
+            Item item =  findItemByName(selectedItem);
+            totalOrderValue = totalOrderValue + item.getPrice();
+
+        }
+        return totalOrderValue;
+
+    }
     public void displayDetails(){
         System.out.println("Restaurant:"+ name + "\n"
                 +"Location:"+ location + "\n"
